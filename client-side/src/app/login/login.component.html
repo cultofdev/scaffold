@@ -1,0 +1,68 @@
+<div class="app-body" [@routerTransition]>
+    <main class="main d-flex align-items-center">
+        <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+            <div class="card-group">
+                <div class="card p-4">
+                <div class="card-body">
+                    <img src="assets/images/dbm.jpg" style="width:100%; margin-bottom:10px; margin-top:-20px"/>
+    
+                    <form #form="ngForm" (ngSubmit)="onSubmit(form.value)">
+                    <p class="text-muted">Sign In to your account</p>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-user-circle-o"></i></span>
+                        </div>
+                        <input type="text" class="form-control" ngModel name="username" placeholder="&nbsp;Username" required>
+                    </div>
+                    <div class="input-group mb-4">
+                        <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-lock" style="width: 16px"></i></span>
+                        </div>
+                        <input type="password" class="form-control" ngModel name="password" placeholder="&nbsp;Password" required>
+                    </div>
+                    <div class="input-group mb-4" style="margin-top: -7px;">
+                        <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-group"></i></span>
+                        </div>
+                        <select name="userType" id="user-type" class="form-control" ngModel style="max-width: 265px;" required>
+                            <option value="1" selected="selected">Agency User</option>
+                            <option value="2">DBM User</option>
+                            <option value="3">Management</option>
+                            <option value="4">Guest</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <button type="submit" class="btn btn-primary px-4" [disabled]="!form.form.valid">Login</button>
+                        </div>
+                        <div class="col-6 text-right">
+                            <button type="button" class="btn btn-link px-0">Forgot password?</button>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 15px; margin-left: 40px">
+                        <p style="color: red">{{errorMessage}}</p>
+                    </div>
+                    </form>
+    
+                </div>
+                </div>
+                <div class="card text-white bg-primary py-5 d-md-down-none" style="width: 44%">
+                <div class="card-body text-center">
+                    <div>
+                    <h3>DBM Portal</h3>
+                    <p>You are attempting to access a private system.  
+                        Unauthorized access, or access  in excess of your authority,
+                        may result in civil and criminal penalties. Your activities are
+                        being logged and monitored.</p>
+                    <button type="button" class="btn btn-primary active mt-3" routerLink="/signup">Register Now!</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    </div>
