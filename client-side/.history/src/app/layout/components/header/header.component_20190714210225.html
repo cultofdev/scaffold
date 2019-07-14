@@ -10,44 +10,23 @@
             
             <li class="nav-item dropdown" ngbDropdown>
                 <a href="javascript:void(0)" class="nav-link" ngbDropdownToggle>
-                    <i class="fa fa-wrench"></i>  Menu 1 <b class="caret"></b>
+                    <i class="fa fa-cogs"></i>  Admin <b class="caret"></b>
                 </a>
                 <div class="dropdown-menu-right" ngbDropdownMenu>
                     <a class="dropdown-item" href="javascript:void(0)" routerLink="/application">
-                        <i class="fa fa-fw fa-cubes"></i> {{ 'Sub Menu 1' | translate }}
+                        <i class="fa fa-fw fa-cubes"></i> {{ 'Apps' | translate }}
                     </a>
                     <a class="dropdown-item" href="javascript:void(0)" routerLink="/user-admin">
-                        <i class="fa fa-fw fa-users"></i> {{ 'Sub Menu 1' | translate }}
+                        <i class="fa fa-fw fa-users"></i> {{ 'Users' | translate }}
                     </a>
                     <a class="dropdown-item" href="javascript:void(0)" routerLink="/position">
-                        <i class="fa fa-fw fa-universal-access"></i> {{ 'Sub Menu 1' | translate }}
+                        <i class="fa fa-fw fa-universal-access"></i> {{ 'Positions' | translate }}
                     </a>
                     <a class="dropdown-item" href="javascript:void(0)" routerLink="/permission">
-                        <i class="fa fa-fw fa-key"></i> {{ 'Sub Menu 1' | translate }}
+                        <i class="fa fa-fw fa-key"></i> {{ 'Permissions' | translate }}
                     </a>
                 </div>
             </li>
-            &nbsp;
-            <li class="nav-item dropdown" ngbDropdown>
-                <a href="javascript:void(0)" class="nav-link" ngbDropdownToggle>
-                    <i class="fa fa-cogs"></i>  Menu 2 <b class="caret"></b>
-                </a>
-                <div class="dropdown-menu-right" ngbDropdownMenu>
-                    <a class="dropdown-item" href="javascript:void(0)" routerLink="/application">
-                        <i class="fa fa-fw fa-cubes"></i> {{ 'Sub Menu 1' | translate }}
-                    </a>
-                    <a class="dropdown-item" href="javascript:void(0)" routerLink="/user-admin">
-                        <i class="fa fa-fw fa-users"></i> {{ 'Sub Menu 1' | translate }}
-                    </a>
-                    <a class="dropdown-item" href="javascript:void(0)" routerLink="/position">
-                        <i class="fa fa-fw fa-universal-access"></i> {{ 'Sub Menu 1' | translate }}
-                    </a>
-                    <a class="dropdown-item" href="javascript:void(0)" routerLink="/permission">
-                        <i class="fa fa-fw fa-key"></i> {{ 'Sub Menu 1' | translate }}
-                    </a>
-                </div>
-            </li>
-            &nbsp;
             <li class="nav-item dropdown" ngbDropdown>
                 <a href="javascript:void(0)" class="nav-link" ngbDropdownToggle>
                     <i class="fa fa-user"></i>  {{this.user}} <b class="caret"></b>

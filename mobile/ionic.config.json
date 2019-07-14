@@ -1,0 +1,7 @@
+{
+  "name": "osbp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
