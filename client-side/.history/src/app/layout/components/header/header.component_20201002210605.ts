@@ -137,43 +137,7 @@ export class HeaderComponent implements OnInit {
                                 },
                             ]
                         }
-                    ],
-                    [
-                        {
-                            label: 'Menu 2.3',
-                            items: [
-                                {
-                                    icon: 'fa fa-check',
-                                    label: 'Menu 2.3.1',
-                                },
-                                {
-                                    icon: 'fa fa-list-ul',
-                                    label: 'Menu 2.3.2',
-                                },
-                                {
-                                    icon: 'fa fa-clipboard',
-                                    label: 'Menu 2.3.3',
-                                },
-                            ]
-                        },
-                        {
-                            label: 'Menu 2.4',
-                            items: [
-                                {
-                                    icon: 'fa fa-file-pdf-o',
-                                    label: 'Menu 2.4.1',
-                                },
-                                {
-                                    icon: 'fa fa-file-pdf-o',
-                                    label: 'Menu 2.4.2',
-                                },
-                                {
-                                    icon: 'fa fa-file-pdf-o',
-                                    label: 'Menu 2.4.3',
-                                },
-                            ]
-                        }
-                    ],
+                    ]
                 ]
             },
             {

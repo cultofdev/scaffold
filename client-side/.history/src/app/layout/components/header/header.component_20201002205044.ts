@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 import { MegaMenuItem } from 'primeng/api';
 
 @Component({
@@ -59,159 +61,45 @@ export class HeaderComponent implements OnInit {
                                 },
                             ]
                         }
-                    ],
-                    [
-                        {
-                            label: 'Menu 1.3',
-                            items: [
-                                {
-                                    icon: 'fa fa-check',
-                                    label: 'Menu 1.3.1',
-                                },
-                                {
-                                    icon: 'fa fa-list-ul',
-                                    label: 'Menu 1.3.2',
-                                },
-                                {
-                                    icon: 'fa fa-clipboard',
-                                    label: 'Menu 1.3.3',
-                                },
-                            ]
-                        },
-                        {
-                            label: 'Menu 1.4',
-                            items: [
-                                {
-                                    icon: 'fa fa-file-pdf-o',
-                                    label: 'Menu 1.4.1',
-                                },
-                                {
-                                    icon: 'fa fa-file-pdf-o',
-                                    label: 'Menu 1.4.2',
-                                },
-                                {
-                                    icon: 'fa fa-file-pdf-o',
-                                    label: 'Menu 1.4.3',
-                                },
-                            ]
-                        }
-                    ],
+                    ]
                 ]
             },
             {
-                icon: 'fa fa-cubes',
-                label: 'Menu 2',
+                icon: 'fa fa-sitemap',
+                label: 'Menu 1',
                 items: [
                     [
                         {
-                            label: 'Menu 2.1',
+                            label: 'Menu 1.1',
                             items: [
                                 {
                                     icon: 'fa fa-check',
-                                    label: 'Menu 2.1.1',
+                                    label: 'Menu 1.1.1',
                                 },
                                 {
                                     icon: 'fa fa-list-ul',
-                                    label: 'Menu 2.1.2',
+                                    label: 'Menu 1.1.2',
                                 },
                                 {
                                     icon: 'fa fa-clipboard',
-                                    label: 'Menu 2.1.3',
+                                    label: 'Menu 1.1.3',
                                 },
                             ]
                         },
                         {
-                            label: 'Menu 2.2',
+                            label: 'Menu 1.2',
                             items: [
                                 {
                                     icon: 'fa fa-file-pdf-o',
-                                    label: 'Menu 2.2.1',
+                                    label: 'Menu 1.2.1',
                                 },
                                 {
                                     icon: 'fa fa-file-pdf-o',
-                                    label: 'Menu 2.2.2',
+                                    label: 'Menu 1.2.2',
                                 },
                                 {
                                     icon: 'fa fa-file-pdf-o',
-                                    label: 'Menu 2.2.3',
-                                },
-                            ]
-                        }
-                    ],
-                    [
-                        {
-                            label: 'Menu 2.3',
-                            items: [
-                                {
-                                    icon: 'fa fa-check',
-                                    label: 'Menu 2.3.1',
-                                },
-                                {
-                                    icon: 'fa fa-list-ul',
-                                    label: 'Menu 2.3.2',
-                                },
-                                {
-                                    icon: 'fa fa-clipboard',
-                                    label: 'Menu 2.3.3',
-                                },
-                            ]
-                        },
-                        {
-                            label: 'Menu 2.4',
-                            items: [
-                                {
-                                    icon: 'fa fa-file-pdf-o',
-                                    label: 'Menu 2.4.1',
-                                },
-                                {
-                                    icon: 'fa fa-file-pdf-o',
-                                    label: 'Menu 2.4.2',
-                                },
-                                {
-                                    icon: 'fa fa-file-pdf-o',
-                                    label: 'Menu 2.4.3',
-                                },
-                            ]
-                        }
-                    ],
-                ]
-            },
-            {
-                icon: 'fa fa-tasks',
-                label: 'Menu 3',
-                items: [
-                    [
-                        {
-                            label: 'Menu 3.1',
-                            items: [
-                                {
-                                    icon: 'fa fa-check',
-                                    label: 'Menu 3.1.1',
-                                },
-                                {
-                                    icon: 'fa fa-list-ul',
-                                    label: 'Menu 3.1.2',
-                                },
-                                {
-                                    icon: 'fa fa-clipboard',
-                                    label: 'Menu 3.1.3',
-                                },
-                            ]
-                        },
-                        {
-                            label: 'Menu 3.2',
-                            items: [
-                                {
-                                    icon: 'fa fa-file-pdf-o',
-                                    label: 'Menu 3.2.1',
-                                },
-                                {
-                                    icon: 'fa fa-file-pdf-o',
-                                    label: 'Menu 3.2.2',
-                                },
-                                {
-                                    icon: 'fa fa-file-pdf-o',
-                                    label: 'Menu 3.2.3',
+                                    label: 'Menu 1.2.3',
                                 },
                             ]
                         }
@@ -219,41 +107,41 @@ export class HeaderComponent implements OnInit {
                 ]
             },
             {
-                icon: 'fa fa-database',
-                label: 'Menu 4',
+                icon: 'fa fa-sitemap',
+                label: 'Menu 1',
                 items: [
                     [
                         {
-                            label: 'Menu 4.1',
+                            label: 'Menu 1.1',
                             items: [
                                 {
                                     icon: 'fa fa-check',
-                                    label: 'Menu 4.1.1',
+                                    label: 'Menu 1.1.1',
                                 },
                                 {
                                     icon: 'fa fa-list-ul',
-                                    label: 'Menu 4.1.2',
+                                    label: 'Menu 1.1.2',
                                 },
                                 {
                                     icon: 'fa fa-clipboard',
-                                    label: 'Menu 4.1.3',
+                                    label: 'Menu 1.1.3',
                                 },
                             ]
                         },
                         {
-                            label: 'Menu 4.2',
+                            label: 'Menu 1.2',
                             items: [
                                 {
                                     icon: 'fa fa-file-pdf-o',
-                                    label: 'Menu 4.2.1',
+                                    label: 'Menu 1.2.1',
                                 },
                                 {
                                     icon: 'fa fa-file-pdf-o',
-                                    label: 'Menu 4.2.2',
+                                    label: 'Menu 1.2.2',
                                 },
                                 {
                                     icon: 'fa fa-file-pdf-o',
-                                    label: 'Menu 4.2.3',
+                                    label: 'Menu 1.2.3',
                                 },
                             ]
                         }
@@ -261,41 +149,83 @@ export class HeaderComponent implements OnInit {
                 ]
             },
             {
-                icon: 'fa fa-clipboard',
-                label: 'Menu 5',
+                icon: 'fa fa-sitemap',
+                label: 'Menu 1',
                 items: [
                     [
                         {
-                            label: 'Menu 5.1',
+                            label: 'Menu 1.1',
                             items: [
                                 {
                                     icon: 'fa fa-check',
-                                    label: 'Menu 5.1.1',
+                                    label: 'Menu 1.1.1',
                                 },
                                 {
                                     icon: 'fa fa-list-ul',
-                                    label: 'Menu 5.1.2',
+                                    label: 'Menu 1.1.2',
                                 },
                                 {
                                     icon: 'fa fa-clipboard',
-                                    label: 'Menu 5.1.3',
+                                    label: 'Menu 1.1.3',
                                 },
                             ]
                         },
                         {
-                            label: 'Menu 5.2',
+                            label: 'Menu 1.2',
                             items: [
                                 {
                                     icon: 'fa fa-file-pdf-o',
-                                    label: 'Menu 5.2.1',
+                                    label: 'Menu 1.2.1',
                                 },
                                 {
                                     icon: 'fa fa-file-pdf-o',
-                                    label: 'Menu 5.2.2',
+                                    label: 'Menu 1.2.2',
                                 },
                                 {
                                     icon: 'fa fa-file-pdf-o',
-                                    label: 'Menu 5.2.3',
+                                    label: 'Menu 1.2.3',
+                                },
+                            ]
+                        }
+                    ]
+                ]
+            },
+            {
+                icon: 'fa fa-sitemap',
+                label: 'Menu 1',
+                items: [
+                    [
+                        {
+                            label: 'Menu 1.1',
+                            items: [
+                                {
+                                    icon: 'fa fa-check',
+                                    label: 'Menu 1.1.1',
+                                },
+                                {
+                                    icon: 'fa fa-list-ul',
+                                    label: 'Menu 1.1.2',
+                                },
+                                {
+                                    icon: 'fa fa-clipboard',
+                                    label: 'Menu 1.1.3',
+                                },
+                            ]
+                        },
+                        {
+                            label: 'Menu 1.2',
+                            items: [
+                                {
+                                    icon: 'fa fa-file-pdf-o',
+                                    label: 'Menu 1.2.1',
+                                },
+                                {
+                                    icon: 'fa fa-file-pdf-o',
+                                    label: 'Menu 1.2.2',
+                                },
+                                {
+                                    icon: 'fa fa-file-pdf-o',
+                                    label: 'Menu 1.2.3',
                                 },
                             ]
                         }
