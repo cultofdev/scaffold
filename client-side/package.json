@@ -41,7 +41,7 @@
         "primeng": "^10.0.2",
         "rxjs": "^6.6.3",
         "typescript": "^3.8.3",
-        "yarn": "^1.22.10",
+        "yarn": "^1.22.0",
         "zone.js": "^0.10.3"
     },
     "devDependencies": {
